@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Custom scrolling animation for amenities */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+html {
+  font-size: calc((100vh / 1000) * 16);
+}
