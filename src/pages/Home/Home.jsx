@@ -7,6 +7,13 @@ import landingVideo from "../../assets/landing.mp4";
 import calendarIcon from "../../assets/icons/calendar-2-line.svg";
 
 const Home = () => {
+  const url =
+    "https://www.booking.com/hotel/lk/the-cloud-hanthana-kandy.en-us.html?aid=1549630&label=bckbtn-clicktrip-bn-n37-030625-the_cloud_hanthana_kandy-i18694353-s119021-w4h1RCY1GhE1HZF4N-cu_tab-d1103-dc3&sid=515644fee0aeea3376641f2bd50ce8ce&all_sr_blocks=1031380007_376056652_2_42_0&checkin=2025-06-13&checkout=2025-06-14&dest_id=-2222251&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1031380007_376056652_2_42_0&hpos=1&matching_block_id=1031380007_376056652_2_42_0&nflt=sth%3D27&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1031380007_376056652_2_42_0__3010&srepoch=1749823820&srpvid=524063a2662702df&type=total&ucfs=1&#hotelTmpl";
+
+  const handleClick = () => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Navbar */}
@@ -76,6 +83,7 @@ const Home = () => {
               style={{
                 boxShadow: "0px 4px 4px 0px #00000040",
               }}
+              onClick={handleClick}
             >
               <img
                 src={calendarIcon}

@@ -162,7 +162,7 @@ const Rooms = () => {
   return (
     <div
       id="rooms-container"
-      className="text-white flex w-full h-screen overflow-hidden"
+      className="text-white flex w-full h-screen overflow-hidden px-17"
       style={{
         backgroundColor: "#1F2125",
         paddingTop: "80px", // Add padding to account for navbar

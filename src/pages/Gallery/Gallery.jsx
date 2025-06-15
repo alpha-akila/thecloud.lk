@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import arrowLeftIcon from "../../assets/icons/arrow-left-double-line.svg";
 import arrowRightIcon from "../../assets/icons/arrow-right-double-line.svg";
 import instagramIcon from "../../assets/icons/instagram-line.svg";
-// import "./gallery.css"; 
+// import "./gallery.css";
 
 const Gallery = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -12,14 +12,14 @@ const Gallery = () => {
 
   // Sample gallery images
   const galleryImages = [
-    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=400&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=400&h=400&fit=crop",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/581121280.jpg?k=461d9087ebd6c31cd6726473560547e2b2f7905f522814e1bcee4705343398a8&o=",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/627155779.jpg?k=88464b921f6d651f262cbac5d9c0cd05678c71a04192edaa5118b0a158243eae&o=",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/471607480.jpg?k=f1f6808fe9cd05bf30b444eabe8c853fec4cb67e8e1b9a9b9ed4a5feead98372&o=",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/471607495.jpg?k=5089593efd74d5ef128481b26c2a6ea43c7c9829f8afb914e224506e3a6bad1c&o=",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/473244027.jpg?k=dbcc42d8346325b2d61d627054f45ea5a3f2f691b949fc79e375a931c3a48c83&o=",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/627154517.jpg?k=5ffb9f63c1be2fc293889ecc3b9f8a00912f08e9ad6200b5a39079f90c619238&o=",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483841949.jpg?k=9dad571d3a3774c7d1e3756be86c2ee444c204d71d93ab732395210999b62b5b&o=",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/607828329.jpg?k=c0c70ccb05a4d68f2d1945f600faf8ce0b464a4efd7d17b1b2e04249304538b4&o=",
   ];
 
   // Load sample testimonials (Google Places API can't be called directly from browser due to CORS)
@@ -102,8 +102,8 @@ const Gallery = () => {
   return (
     <div className="text-white relative" style={{ backgroundColor: "#1F2125" }}>
       {/* Instagram Feed Section */}
-      <div className="py-16 px-8">
-        <div className="max-w-7xl mx-auto">
+      <div className="py-16 px-17">
+        <div className=" mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
             <p
@@ -111,7 +111,7 @@ const Gallery = () => {
               style={{
                 fontFamily: "Inter",
                 fontWeight: 400,
-                fontSize: "28px",
+                fontSize: "1.75rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
                 textAlign: "center",
@@ -124,7 +124,7 @@ const Gallery = () => {
               style={{
                 fontFamily: "Lora",
                 fontWeight: 400,
-                fontSize: "80px",
+                fontSize: "5rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
                 textAlign: "center",
@@ -159,7 +159,7 @@ const Gallery = () => {
                         key={actualIndex}
                         className="overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer relative group"
                         style={{
-                          height: isTall ? "300px" : "200px",
+                          height: isTall ? "22rem" : "12.5rem",
                         }}
                       >
                         <img
@@ -189,7 +189,7 @@ const Gallery = () => {
 
       {/* Testimonials Section */}
       <div className="py-16 px-8" style={{ backgroundColor: "#1F2125" }}>
-        <div className="max-w-7xl mx-auto">
+        <div className=" mx-auto px-17">
           {/* Header */}
           <div className="text-center mb-12">
             <h2
@@ -197,7 +197,7 @@ const Gallery = () => {
               style={{
                 fontFamily: "Lora",
                 fontWeight: 400,
-                fontSize: "80px",
+                fontSize: "5rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
               }}
@@ -209,14 +209,14 @@ const Gallery = () => {
               style={{
                 fontFamily: "Lora",
                 fontWeight: 400,
-                fontSize: "28px",
+                fontSize: "1.75rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
               }}
             >
               Discover what our satisfied customers have to say
               <br />
-              about their experiences with our products / services
+              about their experiences with our products/services
             </p>
           </div>
 
@@ -234,9 +234,9 @@ const Gallery = () => {
                     style={{
                       background:
                         "linear-gradient(180deg, rgba(255, 255, 255, 0.1) 26.44%, rgba(66, 158, 194, 0.1) 80.77%)",
-                      width: "400px",
-                      height: "250px",
-                      borderRadius: "38px",
+                      width: "100%",
+                      height: "16rem",
+                      borderRadius: "2rem",
                     }}
                   >
                     <blockquote
@@ -244,7 +244,7 @@ const Gallery = () => {
                       style={{
                         fontFamily: "Lora",
                         fontWeight: 400,
-                        fontSize: "20px",
+                        fontSize: "1.5rem",
                         lineHeight: "100%",
                         letterSpacing: "0%",
                         textAlign: "center",
@@ -260,7 +260,7 @@ const Gallery = () => {
                           style={{
                             fontFamily: "Inter",
                             fontWeight: 600,
-                            fontSize: "20px",
+                            fontSize: "1.5rem",
                             lineHeight: "100%",
                             letterSpacing: "0%",
                             textAlign: "center",
@@ -278,7 +278,7 @@ const Gallery = () => {
                               style={{
                                 fontFamily: "Inter",
                                 fontWeight: 600,
-                                fontSize: "20px",
+                                fontSize: "1.5rem",
                                 lineHeight: "100%",
                                 letterSpacing: "0%",
                                 textAlign: "center",
